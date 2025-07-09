@@ -1,0 +1,12 @@
+services:
+  kanidm:
+    image: kanidm/server:latest
+    container_name: kanidm
+    restart: unless-stopped
+    user: "1000:1000"
+    expose:
+      - 8443
+    volumes:
+      - ./data:/data
+    environment:
+      KANIDM_ENABLE_SELF_SIGNED_CA: "true"

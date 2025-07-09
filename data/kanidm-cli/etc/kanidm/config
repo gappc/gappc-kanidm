@@ -1,0 +1,4 @@
+uri = "https://gappc-iam.com"
+ca_path = "/data/chain.pem"
+# DANGEROUS: This disables certificate verification, which is not recommended for production use.
+verify_ca = false

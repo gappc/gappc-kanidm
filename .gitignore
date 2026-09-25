@@ -1,2 +1,3 @@
 *.pem
-compose.override.yml
+compose.override.yml# kanidm CLI login tokens — never commit
+data/kanidm-cli/.cache/kanidm_tokens
